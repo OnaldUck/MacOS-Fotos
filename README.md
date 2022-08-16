@@ -5,7 +5,7 @@ Hier kommen paart Tips zur Apples Foto Mediathek
 Nach den Export von Videos geht das Erstellungsdatum und die GEO-Informationen verloren. Beim export mit iMovie auch.
 Wenn das Orginal vorhanden ist, kann man die Daten kopieren.
 
-Man brauch das Kommandozeilen Tool https://exiftool.org/
+Man brauch das Kommandozeilen Tool https://exiftool.org/, welches es für Windows und MacOS gibt.
 
 ```
 exiftool -TagsFromFile srcimage.jpg "-all:all>all:all" targetimage.jpg -overwrite_original
