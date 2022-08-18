@@ -39,10 +39,10 @@ exiftool "-FileCreateDate<CreateDate" "-FileModifyDate<CreateDate" C:\Video-Out
 Einen Textdatei `exif-coppy_all.cmd` mit folgenden Inhalt erstellen 
 
 ```
-set /p "quelle=quelle Datei: "
-set /p "ziel=ziel Datei: "
-c:\Tools\exiftool.exe -TagsFromFile %quelle% "-all:all>all:all" %ziel% -overwrite_original
-c:\Tools\exiftool "-FileCreateDate<CreateDate" "-FileModifyDate<CreateDate" %ziel%
+set /p "orginal=Orginal-Datei: "
+set /p "ziel=Ziel-Datei: "
+c:\Tools\exiftool.exe -TagsFromFile %orginal% "-all:all>all:all" %ziel% -overwrite_original
+c:\Tools\exiftool "-FileCreateDate<CreateDate" "-FileModifyDate<CreateDate" -api QuickTimeUTC %ziel%
 ```
 
 ### GPS Daten kopieren
